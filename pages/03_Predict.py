@@ -2,6 +2,9 @@
 import streamlit as st
 import pandas as pd
 import joblib
+import yaml
+from yaml.loader import SafeLoader
+import streamlit_authenticator as stauth
 
 st.set_page_config(
     page_title='Predict Customer Churn!',
