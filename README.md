@@ -54,7 +54,7 @@ The Home page serves as an introduction to the application. It provides an overv
 
 The Data page allows users to explore the dataset used for building the churn prediction model. Users can view the dataset, filter it based on specific criteria, and gain insights into the data distribution. This page helps users familiarize themselves with the data and understand the various features involved in the prediction.
 
-### 📈 Visualize Page
+### 📈 DashBoard Page
 
 The Visualize page enables users to create visualizations to explore relationships and trends in the data. For instance, users can visualize the distribution of customers across different tenures, payment methods, or monthly charges. This helps identify patterns and correlations that may influence customer churn.
 
