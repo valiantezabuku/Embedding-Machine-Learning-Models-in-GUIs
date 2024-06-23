@@ -73,13 +73,14 @@ if st.session_state['authentication_status']:
     """, unsafe_allow_html=True)
 
     # Dashboard title
-    st.title("Customer Churn Dashboard")            
+    st.title("Customer Churn Dashboard")          
 
-    # # Overview Section
-    # st.header("Overview")
-    # st.markdown("""
-    # This dashboard provides insights into customer churn data, helping you understand the factors influencing churn and make data-driven decisions to improve customer retention.
-    # """)
+    col1, col2 = st.columns(2)
+    with col1:
+        pass
+    with col2:
+        st.selectbox('Select the type of dashboard', options=['EDA', 'KPI'], key='selected_dashboard_type')
+
 
     # 2. Load your dataset
     data = pd.read_csv('Data/train.csv')
@@ -437,7 +438,6 @@ if st.session_state['authentication_status']:
             st.markdown("""
                 This dashboard provides insights into customer churn data, helping you understand the factors influencing churn and make data-driven decisions to improve customer retention.
                 """)
-            st.selectbox('Select the type of dashboard', options=['EDA', 'KPI'], key='selected_dashboard_type')
 
         if st.session_state['selected_dashboard_type'] == 'EDA':
             eda_dash()
